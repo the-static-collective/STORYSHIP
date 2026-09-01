@@ -1,0 +1,10 @@
+{
+  "schema": "storyship/ancestry/v0",
+  "formation_sources": [
+    {"repository":"the-static-collective/the-haunted-phonography","pr":15,"merge_commit":"59ea2db01efb6a8738e97dde4c68b4d3fde8b0cf","path":"docs/superpowers/specs/2026-08-24-storyship-001-the-door-design.md","blob":"fcbf525ec7ffa4e11a880797bb4717a7aa9978cf"},
+    {"repository":"the-static-collective/the-haunted-phonography","pr":16,"merge_commit":"26c9ddc881e1334ed1c0e0a4792eb48d5848b503","path":"docs/superpowers/specs/2026-08-24-storyship-attributable-becoming-amendment.md","blob":"a1baa1ea1e61cb6ddc552708f7e5f54deb7127c5"},
+    {"repository":"the-static-collective/the-haunted-phonography","pr":17,"merge_commit":"cc62b17c7fad9e899e042e629fe15ba3d363ca10","path":"docs/superpowers/specs/2026-08-24-storyship-relationship-passenger-law.md","blob":"3c1fb229ae8e5f6dcf941b4ad1235533e5718fae"},
+    {"repository":"the-static-collective/the-haunted-phonography","pr":20,"merge_commit":"c90ad4faa2b3b4307417be6d355128e88c178e3c","path":"docs/superpowers/specs/2026-08-28-storyship-third-arm-variant-law.md","blob":"3b52aa81f2aee37215b9be671904acafb8467907"}
+  ],
+  "prototype": {"repository":"the-static-collective/the-haunted-phonography","pr":19,"head":"a3d699753c280cc62722a69e651df7e23051dabf","state_at_lift":"open-draft-unmerged","contract_blob":"1607e4b40a1d1b57003da996a18f070f8499c42a","ledger_blob":"3ba0e20cf3fac38b4076a54ed9da974a3ad9b0d0"}
+}
