@@ -1,0 +1,13 @@
+{
+  "name": "@the-static-collective/storyship",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "verify": "node cli/storyship.mjs verify fixtures/voyage-000",
+    "crucible": "node --test test/crucible.test.mjs",
+    "preflight": "node cli/storyship.mjs preflight fixtures/voyage-000"
+  },
+  "engines": { "node": ">=22" }
+}
