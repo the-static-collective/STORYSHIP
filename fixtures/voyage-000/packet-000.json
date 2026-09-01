@@ -1,0 +1,19 @@
+{
+  "branch_heads": [],
+  "constitution_id": "sha256:3edc3b6abd98bb2c40183028cf240f28abac90661daba8e10424f4c2293048bd",
+  "event_cut": 3,
+  "memory": {
+    "manifest_projection_id": "sha256:67c9667c96841747e33541dbac5849613fc97001f906a49baf600b70af99a96d",
+    "narrative_relation_ids": []
+  },
+  "open_berth": [],
+  "packet_id": "sha256:100b9ba7bbcc435386ed5a14ba0b9840e766129ed1de0ee2386107f124ca3101",
+  "packet_label": "000",
+  "reality_projection_id": "sha256:ec67f28079d5447c4b5f52c4b092c141d5a5f852f33cf42e9f2c2d8d604afe13",
+  "replay_id": "sha256:45567ca017c2a7183344bb90595f565f96156d9818876c2e882e0e83fe93e573",
+  "schema": "storyship/packet/v0",
+  "source_cut_ids": [
+    "sha256:eb7be6d8b3948e66ed74a99f7b833c73575b8921e625ceb897bab1c3a11cdb7e"
+  ],
+  "voyage_id": "storyship-voyage-000"
+}
