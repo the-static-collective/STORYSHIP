@@ -1,0 +1,15 @@
+{
+  "source": {
+    "repository": "the-static-collective/the-haunted-phonography",
+    "head": "a3d699753c280cc62722a69e651df7e23051dabf",
+    "path": "src/provenance.mjs",
+    "policy": "hp-canonical-json-v1"
+  },
+  "input": {
+    "z": -0.0,
+    "a": {"b": 2, "a": 1},
+    "list": [3, {"y": true, "x": null}]
+  },
+  "canonical": "{\"a\":{\"a\":1,\"b\":2},\"list\":[3,{\"x\":null,\"y\":true}],\"z\":0}",
+  "hash": "sha256:f26ee47c7dd5802c30ec7b7cd5412c01f4e141ee8bf28d804a20a7c4e924f7d8"
+}
