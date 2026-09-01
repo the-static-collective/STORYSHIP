@@ -6,7 +6,7 @@ import { createStoryshipEvent, appendStoryshipEvent } from '../src/ledger.mjs';
 import { replayStoryship } from '../src/replay.mjs';
 import { sealTransferPacket, validateTransferPacket } from '../src/packet.mjs';
 import { createCrossingReceipt } from '../src/receipt.mjs';
-import { SHA, FOUNDING_CONSTITUTION_INPUT, SOURCE_CUT_INPUT, makeEventInput, makeTwinVoyageFixture, makeUnselectedTwinFixture } from './helpers/fixture.mjs';
+import { SHA, FOUNDING_CONSTITUTION_INPUT, SOURCE_CUT_INPUT, makeEventInput, makeTwinVoyageFixture, makeSameBytesTwinFixture, makeUnselectedTwinFixture } from './helpers/fixture.mjs';
 const expectCode = code => error => error?.code === code;
 function packetPair(){const {constitution,events}=makeTwinVoyageFixture();const replay=replayStoryship({constitution,events,cut:events.length});return {replay,packet:sealTransferPacket({replay,packet_label:'000'})};}
 
