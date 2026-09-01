@@ -1,0 +1,23 @@
+{
+  "branch_heads": [
+    {
+      "branch_id": "branch-a",
+      "state_id": "sha256:968bc6a641df3a25204cb17ba213a7adcdc839c95f48112f452274366e070b39",
+      "status": "live"
+    },
+    {
+      "branch_id": "branch-b",
+      "state_id": "sha256:687567b8bb891036144086c3b3ca736fa0b90daa0e72820130d3aa7d5005828f",
+      "status": "dormant"
+    }
+  ],
+  "checkpoint_receipt_id": "sha256:3d1c7ad46375a819d97b2059fb38bbcf844ae48f99a2cda2469fdd83865db7e5",
+  "constitution_id": "sha256:3edc3b6abd98bb2c40183028cf240f28abac90661daba8e10424f4c2293048bd",
+  "currentness": "resolved",
+  "event_count": 12,
+  "packet_id": "sha256:100b9ba7bbcc435386ed5a14ba0b9840e766129ed1de0ee2386107f124ca3101",
+  "replay_id": "sha256:d24929c398068d238cef0006ca0ea2254f36331dc0251bd7701613c3995a7494",
+  "schema": "storyship/verification-summary/v0",
+  "tip_event_id": "sha256:9ac7e6b68d634b8d736379019beb191a18bd34c3e65e0a1499470dc4b5c60543",
+  "voyage_id": "storyship-voyage-000"
+}
