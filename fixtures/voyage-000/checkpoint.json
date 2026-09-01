@@ -1,0 +1,11 @@
+{
+  "authority": "receipt-only",
+  "checkpoint_receipt_id": "sha256:3d1c7ad46375a819d97b2059fb38bbcf844ae48f99a2cda2469fdd83865db7e5",
+  "constitution_id": "sha256:3edc3b6abd98bb2c40183028cf240f28abac90661daba8e10424f4c2293048bd",
+  "event_cut": 12,
+  "packet_id": "sha256:100b9ba7bbcc435386ed5a14ba0b9840e766129ed1de0ee2386107f124ca3101",
+  "previous_receipt_ids": [],
+  "replay_id": "sha256:d24929c398068d238cef0006ca0ea2254f36331dc0251bd7701613c3995a7494",
+  "schema": "storyship/checkpoint-receipt/v0",
+  "voyage_id": "storyship-voyage-000"
+}
