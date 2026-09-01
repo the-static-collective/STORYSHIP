@@ -30,16 +30,24 @@ function normalizeJson(value, path = '$', ancestors = new WeakSet()) {
         normalized.push(normalizeJson(value[index], `${path}[${index}]`, ancestors));
       }
       return normalized;
-    } finally { ancestors.delete(value); }
+    } finally {
+      ancestors.delete(value);
+    }
   }
-  if (!isPlainObject(value) || Object.getOwnPropertySymbols(value).length > 0) fail(`${path} must contain only JSON-safe plain objects`);
+  if (!isPlainObject(value) || Object.getOwnPropertySymbols(value).length > 0) {
+    fail(`${path} must contain only JSON-safe plain objects`);
+  }
   if (ancestors.has(value)) fail(`${path} must not contain cycles`);
   ancestors.add(value);
   try {
     const normalized = {};
-    for (const key of Object.keys(value)) normalized[key] = normalizeJson(value[key], `${path}.${key}`, ancestors);
+    for (const key of Object.keys(value)) {
+      normalized[key] = normalizeJson(value[key], `${path}.${key}`, ancestors);
+    }
     return normalized;
-  } finally { ancestors.delete(value); }
+  } finally {
+    ancestors.delete(value);
+  }
 }
 
 function serialize(value) {
@@ -49,10 +57,22 @@ function serialize(value) {
   return `{${keys.map(key => `${JSON.stringify(key)}:${serialize(value[key])}`).join(',')}}`;
 }
 
-export function canonicalStringify(value) { return serialize(normalizeJson(value)); }
-export function hashCanonical(value) { return `sha256:${createHash('sha256').update(canonicalStringify(value), 'utf8').digest('hex')}`; }
+export function canonicalStringify(value) {
+  return serialize(normalizeJson(value));
+}
+
+export function hashCanonical(value) {
+  return `sha256:${createHash('sha256').update(canonicalStringify(value), 'utf8').digest('hex')}`;
+}
+
 export function deepFreezeJson(value) {
   const clone = JSON.parse(canonicalStringify(value));
-  const freeze = node => { if (node && typeof node === 'object' && !Object.isFrozen(node)) { for (const child of Object.values(node)) freeze(child); Object.freeze(node); } return node; };
+  const freeze = node => {
+    if (node && typeof node === 'object' && !Object.isFrozen(node)) {
+      for (const child of Object.values(node)) freeze(child);
+      Object.freeze(node);
+    }
+    return node;
+  };
   return freeze(clone);
 }
