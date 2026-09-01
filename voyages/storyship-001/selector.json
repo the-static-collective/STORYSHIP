@@ -1,0 +1,25 @@
+{
+  "allowed_outcomes": [
+    "unresolved-historical-outcomes"
+  ],
+  "evidence_refs": [
+    "human-testimony:2026-08-24T14:11:00Z",
+    "github:the-static-collective/the-haunted-phonography#14"
+  ],
+  "mechanism_id": "historical-pre-bandcamp-selector-001",
+  "non_selected_treatment": "historical-treatment-unresolved; Storyship preservation rule is dormant/residue, not historical proof",
+  "operator_inputs_visible": [
+    "paired sibling outputs",
+    "user-supplied generation context"
+  ],
+  "recovery_status": "partial",
+  "schema": "storyship/selector-receipt/v0",
+  "selector_receipt_id": "sha256:e4f1e2a4c751e521f3f2980aba233d36740759ba4b9e5ff6ced9ed4a037a037f",
+  "unresolved_notes": [
+    "Exact comparison procedure used between sibling A and sibling B.",
+    "Whether the operator always selected exactly one sibling, could keep both, could stop, or could defer selection.",
+    "Exact information visible to the operator at the moment of selection beyond the generated outputs and the user-supplied generation context.",
+    "Exact historical treatment of every non-selected sibling.",
+    "Whether selection was a single explicit action or emerged through which sibling was used to seed the next generation."
+  ]
+}
