@@ -1,0 +1,13 @@
+{
+  "blob_sha_for_each_path": {
+    "docs/superpowers/specs/2026-08-31-storyship-launch-keel-design.md": "c52c3dd93b537cc0798cae4b8be42c01f3d5d5dd"
+  },
+  "canonicalization_policy": "storyship-canonical-json-v1",
+  "constitution_id": "sha256:3edc3b6abd98bb2c40183028cf240f28abac90661daba8e10424f4c2293048bd",
+  "ordered_constitutive_paths": [
+    "docs/superpowers/specs/2026-08-31-storyship-launch-keel-design.md"
+  ],
+  "owner_head_sha": "6a941263363c43b47c7e1803cb8d825bd59efcb1",
+  "owner_repository": "the-static-collective/STORYSHIP",
+  "schema": "storyship/constitution-receipt/v0"
+}
