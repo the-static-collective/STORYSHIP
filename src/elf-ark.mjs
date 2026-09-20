@@ -1,6 +1,6 @@
 // STORYSHIP-ELF-ARK-001: a transport adapter, NOT the music-voyage packet.
 // All inputs are deliberately small, data-only, and manually selected.
-import { createHash } from 'node:crypto';
+import { createHash, randomUUID } from 'node:crypto';
 import { lstat, mkdir, mkdtemp, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, relative, resolve } from 'node:path';
 import { canonicalStringify, hashCanonical, STORYSHIP_CANONICALIZATION_POLICY } from './canonical.mjs';
@@ -134,6 +134,8 @@ export async function receiveElfArk({arkDirectory, destination}) {
   const seedBytes = Buffer.from(`${JSON.stringify(seed)}\n`, 'utf8');
   const body = {
     schema:ARRIVAL, ark_id:ark.ark_id,
+    arrival_occurrence_id:randomUUID(),
+    recorded_at:new Date().toISOString(),
     input_sha256:prefixed(artifact),
     origin_receipt_sha256:prefixed(receiptBytes),
     new_seed_sha256:prefixed(seedBytes),
