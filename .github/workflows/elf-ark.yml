@@ -18,3 +18,5 @@ jobs:
         run: node --test test/elf-ark.test.mjs
       - name: Verify existing Storyship test suite
         run: npm test
+      - name: Verify exact-pinned Workbench -> Storyship -> Workbench handoff
+        run: bash scripts/smoke-elf-ark-workbench.sh
