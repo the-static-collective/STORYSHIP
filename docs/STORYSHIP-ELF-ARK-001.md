@@ -31,7 +31,7 @@ node cli/elf-ark.mjs receive --ark /path/to/persistent-carrier/ark-001 \
   --destination /path/to/new-local-workspace
 ```
 
-`receive` re-verifies the Ark, refuses existing targets, and writes four files to the new workspace: `input.txt`, `seed.json`, `parent-receipt.json`, and `arrival.json`. The new seed explicitly declares the previous receipt's byte digest as its parent and uses `copy` as a deliberately deterministic operation. `arrival.json` reports `elf_hatched=false`, `authority=none`, and `destination_status=materialized_unadmitted`.
+`receive` re-verifies the Ark, refuses existing targets, and writes four files to the new workspace: `input.txt`, `seed.json`, `parent-receipt.json`, and `arrival.json`. The new seed explicitly declares the previous receipt's byte digest as its parent and uses `copy` as a deliberately deterministic operation. `arrival.json` reports `elf_hatched=false`, `authority=none`, and `destination_status=materialized_unadmitted`. Each reception receives a fresh `arrival_occurrence_id` and an operator-host `recorded_at` timestamp; the time is a clock reading, not independent proof of transport or boot.
 
 ## New ELF, separately constituted
 
