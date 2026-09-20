@@ -132,3 +132,15 @@ test('missing parent receipt authority is not inferred; receiving material does 
   assert.equal(JSON.parse(await readFile(join(incoming,'seed.json'),'utf8')).parent_receipt_sha256,
     sha(await readFile(join(occurrence,'receipt.json'))));
 });
+
+test('two arrivals from the same sealed Ark have distinct occurrence identities',async t=>{
+  const {root,occurrence}=await specimen(t);
+  const carrier=join(root,'carrier');await sealElfArk({occurrence,destination:carrier});
+  const first=await receiveElfArk({arkDirectory:carrier,destination:join(root,'arrival-one')});
+  const second=await receiveElfArk({arkDirectory:carrier,destination:join(root,'arrival-two')});
+  assert.equal(first.ark_id,second.ark_id);
+  assert.notEqual(first.arrival_occurrence_id,second.arrival_occurrence_id);
+  assert.notEqual(first.arrival_id,second.arrival_id);
+  assert.equal(first.elf_hatched,false);
+  assert.equal(second.elf_hatched,false);
+});
