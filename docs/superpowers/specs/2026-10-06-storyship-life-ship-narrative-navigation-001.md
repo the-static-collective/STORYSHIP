@@ -1,6 +1,6 @@
 # STORYSHIP — LIFE SHIP / Narrative Navigation 001
 
-**Status:** Proposed extension. Not adopted founding law, not an executable proof.  
+**Status:** Human-approved design (2026-10-06). Not adopted founding law, not an executable proof.  
 **Date:** 2026-10-06  
 **Owner:** `the-static-collective/STORYSHIP`  
 **Proposed seam:** a navigator-facing *projection* over the existing append-only voyage, not a replacement for the voyage runtime.
@@ -29,7 +29,7 @@ This proposal adds a **human-facing navigational grammar**: a way to ask what is
 
 It **does not** alter `constitution/constitution.json`, migrate founding sources, rewrite historical steering, unlock Suno spend, grant destination admission, or change existing event/packet schemas.
 
-Existing repository contract outranks this proposal. New artifacts remain proposals until explicitly admitted by the owner.
+Existing repository contract outranks this proposal. This navigation design was explicitly approved by the human owner on 2026-10-06; approval does not itself alter the founding constitution, admit external evidence, or authorize execution or provider spend.
 
 ## 3. The instruments on the life ship
 
@@ -142,4 +142,4 @@ No neighboring project is required for STORYSHIP v0 boot or replay.
 
 > **The ship preserves the passage. The story renders the passage navigable. The traveler chooses the bearing. The unknown remains real.**
 
-This is a **candidate interpretive and interface design**, not a promotion to constitutional authority.
+This is an **approved interpretive and interface design**, not a promotion to constitutional authority or an assertion that NAVIGATION-TURN-001 has executed.
